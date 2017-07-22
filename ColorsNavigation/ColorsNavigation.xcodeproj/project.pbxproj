@@ -15,6 +15,7 @@
 		76E65D801F23056700A9D64B /* ColorsNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65D7F1F23056700A9D64B /* ColorsNavigationTests.swift */; };
 		76E65D8B1F23056700A9D64B /* ColorsNavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65D8A1F23056700A9D64B /* ColorsNavigationUITests.swift */; };
 		76E65D991F23059800A9D64B /* ColorsNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65D981F23059800A9D64B /* ColorsNavController.swift */; };
+		76E65D9B1F230A5A00A9D64B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65D9A1F230A5A00A9D64B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		76E65D8A1F23056700A9D64B /* ColorsNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsNavigationUITests.swift; sourceTree = "<group>"; };
 		76E65D8C1F23056700A9D64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E65D981F23059800A9D64B /* ColorsNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsNavController.swift; sourceTree = "<group>"; };
+		76E65D9A1F230A5A00A9D64B /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				76E65D761F23056700A9D64B /* Info.plist */,
 				76E65D6E1F23056700A9D64B /* ColorsNavigation.xcdatamodeld */,
 				76E65D981F23059800A9D64B /* ColorsNavController.swift */,
+				76E65D9A1F230A5A00A9D64B /* DetailView.swift */,
 			);
 			path = ColorsNavigation;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E65D701F23056700A9D64B /* ColorsNavigation.xcdatamodeld in Sources */,
+				76E65D9B1F230A5A00A9D64B /* DetailView.swift in Sources */,
 				76E65D681F23056700A9D64B /* AppDelegate.swift in Sources */,
 				76E65D991F23059800A9D64B /* ColorsNavController.swift in Sources */,
 			);

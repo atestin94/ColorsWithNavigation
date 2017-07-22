@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,9 +41,48 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="lbw-WP-7h5"/>
+                    <connections>
+                        <segue destination="wjg-xq-cFB" kind="show" id="xha-VN-iZz"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2924" y="132.68365817091455"/>
+        </scene>
+        <!--Detail View-->
+        <scene sceneID="61U-iz-cxI">
+            <objects>
+                <viewController id="wjg-xq-cFB" customClass="DetailView" customModule="ColorsNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KXr-nv-Qlb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fk7-Gj-awI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FCc-0o-y1g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF6-st-QjE">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SF6-st-QjE" firstAttribute="top" secondItem="KXr-nv-Qlb" secondAttribute="bottom" constant="303" id="9Cc-lm-zKo"/>
+                            <constraint firstItem="Fk7-Gj-awI" firstAttribute="top" secondItem="SF6-st-QjE" secondAttribute="bottom" constant="323" id="PQm-wH-wx5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SF6-st-QjE" secondAttribute="trailing" constant="151" id="T9Q-9g-DMO"/>
+                            <constraint firstItem="SF6-st-QjE" firstAttribute="leading" secondItem="FCc-0o-y1g" secondAttribute="leadingMargin" constant="150" id="u2W-1b-s7x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UILabel" destination="SF6-st-QjE" id="DpG-1W-2ji"/>
+                        <outlet property="colorLabel" destination="SF6-st-QjE" id="em8-rs-TI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxi-gP-eIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3815" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wt0-q6-F82">
